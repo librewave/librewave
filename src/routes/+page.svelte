@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>Home - Librewave</title>
+  <title>Librewave</title>
 </svelte:head>
 
 <section class="text-center">
