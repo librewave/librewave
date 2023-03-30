@@ -1,37 +1,29 @@
 <script>
 	import Header from './Header.svelte';
+	import "../app.css";
 	import './styles.css';
+	import '@fontsource/inter'
+	import '@fontsource/noto-sans-jp';
+	import Fa from "svelte-fa";
+  	import { faGithub } from "@fortawesome/free-brands-svg-icons";
+	
 </script>
 
-<div class="app">
+<div class="bg-gray-900">
 	<Header />
-
 	<main>
 		<slot />
 	</main>
-
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p class="text-gray-300 pb-7 flex items-center">
+			<a href="https://github.com/librewave/librewave">
+			<Fa icon={faGithub} size="1.3x" class="mr-2" />
+		</a>
+			Built with <a href="https://kit.svelte.jp" class="text-white ml-2">SvelteKit</a><span class="px-1">+</span><a class="text-white" href="https://vercel.com">Vercel</a></p>
 	</footer>
 </div>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
 
 	footer {
 		display: flex;
